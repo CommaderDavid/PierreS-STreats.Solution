@@ -1,0 +1,25 @@
+@{
+    Layout = "_Layout";
+}
+
+@using PierreS_STreat.Models;
+@model List<PierreS_STreat.Models.Flavor>;
+
+<h1>Current Flavors:</h1>
+<h2>Current User @User.Identity.Name</h2>
+
+@if (@Model.Any())
+{
+    <ul>
+        @foreach (Flavor flavor in Model)
+        {
+            <li>@Html.ActionLink($"{flavor.Name}", "Details", new { id = flavor.FlavorId })</li>
+        }
+    </ul>
+}
+else
+{
+    <h3>You have not added any Flavors yet.</h3>
+}
+
+<p></p>
