@@ -1,8 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1 id="TitleMain">Pierre's Sweet and Savory Treats</h1>
+
+<h4>@Html.ActionLink("See all flavors", "Index", "Flavors")</h4>
+<h4>@Html.ActionLink("See all treats", "Index", "Treats")</h4>
+<h4>@Html.ActionLink("Create an account", "Index", "Account")</h4>
