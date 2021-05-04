@@ -24,6 +24,7 @@ namespace PierreS_STreat.Controllers
         }
 
         [AllowAnonymous]
+        // allows for any user to see and view that page.
         public ActionResult Index()
         {
             List<Flavor> model = _db.Flavors.ToList();
