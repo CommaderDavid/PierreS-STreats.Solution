@@ -1,0 +1,22 @@
+@{
+    Layout = "_Layout";
+}
+
+@model PierreS_STreat.Models.Flavor;
+
+<h3>@User.Identity.Name</h3>
+<h4>Edit a Flavor</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.FlavorId)
+
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+    <br>
+    @Html.Label("Select treat")
+    @Html.DropDownList("TreatId")
+    <br>
+    <input type="submit" value="Edit flavor" class="btn btn-default" />
+}
+<p>@Html.ActionLink("Show all flavors", "Index", "Flavors")</p>
