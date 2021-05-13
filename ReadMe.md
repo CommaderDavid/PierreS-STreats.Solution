@@ -17,5 +17,5 @@ Contact me if you have any concerns or questions at stealth259@gmail.com
 ### Known bugs
 There are no know bugs at this time.
 ### License
-This program is lisensed under the MIT license.
+This program is licensed under the MIT license.
 Copyright (c) 2021 _**David Boedigheimer**_
